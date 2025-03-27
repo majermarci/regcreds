@@ -1,0 +1,7 @@
+pullSecrets:
+  - name: private
+    repository: private.registry.io
+    auth:
+      username: '<passed_in_cli>'
+      password: '<passed_in_cli>'
+      email: email@example.com
