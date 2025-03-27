@@ -4,7 +4,7 @@ A Helm chart for creating Docker registry credentials as Kubernetes secrets.
 
 ## Installation
 
-Add your registry credentials to `values.yaml`:
+Add your registry credentials to your `values.yaml`:
 
 ```yaml
 pullSecrets:
@@ -33,7 +33,7 @@ helm repo add regcreds https://majermarci.github.io/regcreds
 helm repo update
 
 # Install the chart
-helm upgrade --install my-regcreds regcreds/regcreds -n my-namespace --create-namespace
+helm upgrade --install my-regcreds regcreds/regcreds -n my-namespace --create-namespace --values values.yaml
 ```
 
 ## Usage
