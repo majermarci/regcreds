@@ -34,6 +34,15 @@ helm repo update
 
 # Install the chart
 helm upgrade --install my-regcreds regcreds/regcreds -n my-namespace --create-namespace --values values.yaml
+
+# Or install the chart by passing values from env vars
+helm template my-regcreds regcreds/regcreds \
+    --namespace my-namespace --create-namespace \
+    --set pullSecrets[0].name="example" \
+    --set pullSecrets[0].repository="repo.io" \
+    --set pullSecrets[0].auth.username="user" \
+    --set pullSecrets[0].auth.password="pass" \
+    --set pullSecrets[0].auth.email="email@example.com"
 ```
 
 ## Usage
