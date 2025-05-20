@@ -2,6 +2,17 @@ apiVersion: v1
 entries:
   regcreds:
   - apiVersion: v2
+    appVersion: v1.0.5
+    created: "2025-05-20T13:36:11.819636165Z"
+    description: A Helm chart for creating Docker registry credentials as Kubernetes
+      secrets.
+    digest: 1325c8079a75e5393680580019f153c057d27af8d679fb5f5fce8aa1a5671608
+    name: regcreds
+    type: application
+    urls:
+    - https://github.com/majermarci/regcreds/releases/download/regcreds-0.2.1/regcreds-0.2.1.tgz
+    version: 0.2.1
+  - apiVersion: v2
     appVersion: v1.0.0
     created: "2025-03-27T22:10:13.595866017Z"
     description: A Helm chart for creating Docker registry credentials as Kubernetes
@@ -12,4 +23,4 @@ entries:
     urls:
     - https://github.com/majermarci/regcreds/releases/download/regcreds-0.2.0/regcreds-0.2.0.tgz
     version: 0.2.0
-generated: "2025-03-27T22:10:13.59588896Z"
+generated: "2025-05-20T13:36:11.819650091Z"
