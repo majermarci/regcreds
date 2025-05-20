@@ -1,7 +1,6 @@
 pullSecrets:
   - name: private
-    repository: private.registry.io
+    repository: hub.docker.com
     auth:
-      username: '<passed_in_cli>'
-      password: '<passed_in_cli>'
-      email: email@example.com
+      username: "" # Should be passed in CLI!
+      password: "" # Should be passed in CLI!
